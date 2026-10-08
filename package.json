@@ -1,0 +1,30 @@
+{
+  "name": "traceflux",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "dev:api": "pnpm --filter @traceflux/api dev",
+    "dev:frontend": "pnpm --filter @traceflux/frontend dev",
+    "start:api": "pnpm --filter @traceflux/api start",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "seed": "tsx scripts/seed.ts",
+    "migrate": "tsx scripts/migrate.ts",
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "turbo": "^1.13.0",
+    "typescript": "^5.4.5",
+    "tsx": "^4.10.1",
+    "vitest": "^1.6.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

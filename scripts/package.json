@@ -1,0 +1,18 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed": "tsx seed.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@traceflux/storage": "workspace:*",
+    "@traceflux/instrumentation": "workspace:*"
+  },
+  "devDependencies": {
+    "tsx": "^4.10.1",
+    "vitest": "^1.6.0"
+  }
+}

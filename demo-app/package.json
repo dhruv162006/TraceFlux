@@ -1,0 +1,23 @@
+{
+  "name": "demo-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/app.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@traceflux/instrumentation": "workspace:*",
+    "@traceflux/storage": "workspace:*",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "@types/supertest": "^6.0.2",
+    "supertest": "^6.3.4",
+    "tsx": "^4.10.1",
+    "vitest": "^1.6.0"
+  }
+}

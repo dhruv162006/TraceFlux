@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build artifacts & compilation output
+dist/
+build/
+*.tsbuildinfo
+
+# Turbo & Vite caches
+.turbo/
+.vite/
+
+# SQLite databases & journals
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Environment & secret files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor state
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary & scratch files
+search-logs.js
+*.tmp
+*.bak
